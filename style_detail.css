@@ -1,5 +1,6 @@
 .body {
-    height: 100%;
+    height: 100vh;
+    width: 100vw;
     margin:0;
     overflow: hidden;
     cursor: url(./stickers/hand-cursor.webp), auto;
@@ -31,10 +32,11 @@
     .airtable-image{
         width: 100px; 
       }
-      
+
+
       .airtable-item{
-        position: relative;
-        left: 30%;
+        position: absolute;
+        left: 10rem;
         top: 40%;
         z-index: 2;
       }
@@ -48,7 +50,6 @@
         display: none; 
       }
       
-            
 
 .main{
     height: 100%;
@@ -66,14 +67,14 @@
     display: grid;
     grid-template-columns: auto auto;
     padding: 10px;
-    width:1000px;
     margin:auto;
+
 }
 
 
 .filters-container{
     height: 10%;
-    width: 100%;
+    width: 100vw;
     display: grid;
     padding: 2px;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -81,99 +82,26 @@
     row-gap: 1rem; 
     grid-auto-flow:column;  
     grid-gap:10px; 
-    overflow:auto;
-
   }
 
-
-.title-1{
-    font-family: 'Helvetica Neue';
-    font-size: 24px;
-    text-transform: uppercase;
-    overflow: auto;
-    padding: 20px;
-    justify-self:start;
-    overflow:hidden;
- }
         
-.title-2{
-    font-family: 'Helvetica Neue';
-    font-size: 24px;
-    text-transform: uppercase;
-    overflow: auto;
-    padding: 20px;
-    justify-self: end;
-    overflow:hidden;
-}
-                
-        
-.fruit-1{
-    position: absolute;
-    top:100px;
-    right: 0px;
-    width:380px;
-    transform: rotate(210deg);
-
-}
-
-.fruit-2{
-    position: absolute;
-    width: 220px;
-    right: 250px;
-    top: 150px;
-    border-radius: 0px;
-    transform: rotate(45deg);
-
-}
-
-.fruit-3{
-    position: absolute;
-    width: 370px;
-    left: 20px;
-    top: 0px;
-    border-radius: 0px;
-    
-}
-
-.fruit-4{
-    position: absolute;
-    width: 100px;
-    left: 220px;
-    top: 400px;
-    border-radius: 0px;
-    transform: rotate(290deg);
-}
-
-.fruit-5{
-    position: absolute;
-    width: 80px;
-    right: 190px;
-    top: 350px;
-    border-radius: 0px;
-}
-.fruit-6{
-    position: absolute;
-    width: 200px;
-    left: 330px;
-    top: 350px;
-    border-radius: 0px;
-}
-
 img{
-    max-width:100%;
-    max-height:100%;
-    justify-content: center;
+    position: relative;
     z-index: 1;
+    max-width: 100%;
+    max-height: 100%;
+    justify-content: center;
+ 
 }
 
-.fruit_old
-{
-    position: relative;
+.fruit_old{
     width: 100%;
+    position: relative;
 }
 
 .fruit_corusel_item{
-    width: 120px;
+    width: 20vw;
+    height: auto;
 }
 
 
@@ -183,32 +111,18 @@ img{
     border-color: black;
     border-width: 2px;
     display: grid;
+    grid-auto-flow: column;
     grid-template-columns: auto auto auto auto auto;
     padding: 2px;
-    width:1415px;
+    column-span: 5;
     margin:auto;
     bottom: 8px;
     position: absolute;
     justify-items: center;
 }
 
-.halos{
-    position: absolute;
-    top: 280px;
-    right:650px;
-    width: 120px;
-    transform: rotate(45deg);
-}
 
-.fruit_control_left_m{
-    display: none;
-}
-.fruit_control_right_m{
-   display: none;
-}
-
-
-
+/* 
 @media screen and (min-width: 1440px) {
     .main_fruit,
     .fruit_corusel,{
@@ -222,43 +136,53 @@ img{
 
 @media screen and (min-width: 1200px) {
     .main_fruit,
-    .fruit_old,
     .fruit_corusel,{
-
+        overflow: auto;
+        display: flex;
+        justify-content:center;
+        align-items:center;
     }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
     .main_fruit,
-    .fruit_old,
     .fruit_corusel,{
-
+        overflow: auto;
+        display: flex;
+        justify-content:center;
+        align-items:center;
     }
 }
 
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
     .main_fruit,
-    .fruit_old,
     .fruit_corusel,{
- 
+        overflow: auto;
+        display: flex;
+        justify-content:center;
+        align-items:center;
     }
 }
 
 
 @media screen and (min-width: 600px) and (max-width: 768px) {
     .main_fruit,
-    .fruit_old,
     .fruit_corusel,{
-
+        overflow: auto;
+        display: flex;
+        justify-content:center;
+        align-items:center;
     }
 }
 
 @media screen and (max-width: 600px) {
     .main_fruit,
-    .fruit_old,
     .fruit_corusel,{
-
+        overflow: auto;
+        display: flex;
+        justify-content:center;
+        align-items:center;
     }
 }
 
@@ -270,4 +194,4 @@ img{
 
 
 
-
+ */
