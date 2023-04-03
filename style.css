@@ -134,48 +134,254 @@ img{
     justify-content: center; 
 }
 
-.fruit_old
-{
-    float:left;
-    margin:25px;
-    width: 450px;
-    height: 450px;
+@media screen and (min-width: 1440px) {
+    .fruit-1 {
+        position: absolute;
+        top:100px;
+        right: 0px;
+        width:380px;
+        transform: rotate(210deg);
+    }
 }
 
-
-
-
-/* filter btn */
-
-
-.filters-container{
-    display: inline-block;
-}
-
-.filters-1{
-    display: flex;
-    gap: .5rem;
-    margin-top: 1rem;
-} 
-.filters-2{
-    display: flex;
-    gap: .5rem;
-    margin-top: 1rem;
-} 
-
-.filter-btn, 
-/* .sort-toggle{
-    background: black;
-    color: white;
-    padding: 1rem;
-    border-radius: .5rem;
+/* @media screen and (min-width: 1200px) {
+    .fruit-1 {
+        position: absolute;
+        top:100px;
+        right: 0px;
+        width:300px;
+        transform: rotate(210deg);
+    }
 } */
 
-.filter-btn:not(.is-active):hover,
-.sort-toggle:hover{
-    background: #7000FF;
+/* @media screen and (min-width: 992px) and (max-width: 1200px) {
+
 }
 
-.filter-btn.is-active{
-    background: #7000FF;
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+} */
+
+
+@media screen and (min-width: 730px) and (max-width: 915px) {
+    .fruit-1{
+        position: absolute;
+        top:100px;
+        right: 0px;
+        width:280px;
+        transform: rotate(210deg);
+    
+    }
+    
+    .fruit-2{
+        position: absolute;
+        width: 170px;
+        right: 250px;
+        top: 150px;
+        border-radius: 0px;
+        transform: rotate(45deg);
+    
+    }
+    
+    .fruit-3{
+        position: absolute;
+        width: 320px;
+        left: 20px;
+        top: 0px;
+        border-radius: 0px;
+        
+    }
+    
+    .fruit-4{
+        position: absolute;
+        width: 50px;
+        left: 220px;
+        top: 400px;
+        border-radius: 0px;
+        transform: rotate(290deg);
+    }
+    
+    .fruit-5{
+        position: absolute;
+        width: 150px;
+        right: 100px;
+        top: 314px;
+        border-radius: 0px;
+    }
+    .fruit-6{
+        position: absolute;
+        width: 150px;
+        left: 330px;
+        top: 350px;
+        border-radius: 0px;
+    }
 }
+
+
+@media screen and (min-width: 680px) and (max-width: 729px) {
+    .fruit-1{
+        position: absolute;
+        top:100px;
+        right: 0px;
+        width: 260px;
+        transform: rotate(210deg);
+    
+    }
+    
+    .fruit-2{
+        position: absolute;
+        width: 170px;
+        right: 230px;
+        top: 150px;
+        border-radius: 0px;
+        transform: rotate(45deg);
+    
+    }
+    
+    .fruit-3{
+        position: absolute;
+        width: 300px;
+        left: 20px;
+        top: 0px;
+        border-radius: 0px;
+        
+    }
+    
+    .fruit-4{
+        position: absolute;
+        width: 100px;
+        left: 200px;
+        top: 310px;
+        border-radius: 0px;
+        transform: rotate(290deg);
+    }
+    
+    .fruit-5{
+        position: absolute;
+        width: 130px;
+        right: 100px;
+        top: 314px;
+        border-radius: 0px;
+    }
+    .fruit-6{
+        position: absolute;
+        width: 130px;
+        left: 330px;
+        top: 350px;
+        border-radius: 0px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 679px) {
+    .fruit-1{
+        position: absolute;
+        top:100px;
+        right: 0px;
+        width: 200px;
+        transform: rotate(210deg);
+    
+    }
+    
+    .fruit-2{
+        position: absolute;
+        width: 130px;
+        right: 200px;
+        top: 150px;
+        border-radius: 0px;
+        transform: rotate(45deg);
+    
+    }
+    
+    .fruit-3{
+        position: absolute;
+        width: 250px;
+        left: 20px;
+        top: 0px;
+        border-radius: 0px;
+        
+    }
+    
+    .fruit-4{
+        position: absolute;
+        width: 70px;
+        left: 130px;
+        top: 300px;
+        border-radius: 0px;
+        transform: rotate(290deg);
+    }
+    
+    .fruit-5{
+        position: absolute;
+        width: 130px;
+        right: 100px;
+        top: 250px;
+        border-radius: 0px;
+    }
+    .fruit-6{
+        position: absolute;
+        width: 130px;
+        left: 250px;
+        top: 300px;
+        border-radius: 0px;
+    }
+
+}
+
+
+@media screen and (min-width: 500px) and (max-width: 599px) {
+    .fruit-1{
+        position: absolute;
+        top:90px;
+        right: 0px;
+        width: 200px;
+        transform: rotate(210deg);
+    
+    }
+    
+    .fruit-2{
+        position: absolute;
+        width: 130px;
+        right: 120px;
+        top: 100px;
+        border-radius: 0px;
+        transform: rotate(45deg);
+    
+    }
+    
+    .fruit-3{
+        position: absolute;
+        width: 250px;
+        left: 20px;
+        top: 0px;
+        border-radius: 0px;
+        
+    }
+    
+    .fruit-4{
+        position: absolute;
+        width: 70px;
+        left: 130px;
+        top: 270px;
+        border-radius: 0px;
+        transform: rotate(290deg);
+    }
+    
+    .fruit-5{
+        position: absolute;
+        width: 100px;
+        right: 100px;
+        top: 220px;
+        border-radius: 0px;
+    }
+    .fruit-6{
+        position: absolute;
+        width: 100px;
+        left: 220px;
+        top: 270px;
+        border-radius: 0px;
+    }
+
+}
+
+/* @media screen and (min-width: 400px) and (max-width: 499px) */
