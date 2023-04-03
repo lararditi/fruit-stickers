@@ -15,7 +15,7 @@ base("table")
       // each record will have its own div
       let airtableItem = document.createElement("div");
       // add some data specific meta to my new divs for filtering
-      airtableItem.classList.add("airtable-item");
+      // airtableItem.classList.add("airtable-item");
       airtableItem.setAttribute("data-ethic", record.fields.ethic);
 
       // create a img tag for my sticker
@@ -30,6 +30,9 @@ base("table")
       airtableItem.append(fruitSticker);
       
       // append div to body
+      let mainFruit = document.querySelector(".main_fruit");
+      
+
       
       //this is from stackoverflow, how to find name of file
        var path=window.location.pathname;
@@ -40,13 +43,13 @@ base("table")
        if("apple.html"===filename){
           let ethicParent = document.querySelector("#ethicParent");
           let unethicParent = document.querySelector("#unethicParent");
-          console.log(record.fields.produceType);
-
           if(record.fields.produceType==="Melon"){
            if(record.fields.ethic==="ethical"){
+              airtableItem.classList.add("airtable-item");
               ethicParent.append(airtableItem);
            }else if(record.fields.ethic==="unethical"){
               unethicParent.append(airtableItem);
+              airtableItem.classList.add("airtable-item");
            };
         }
        }
@@ -69,12 +72,12 @@ let romanticFilterBtn = document.querySelector("#unethic");
 romanticFilterBtn.addEventListener("click", function(event){ShowHideFilter(event)});
 
 function ShowHideFilter(e) {
-  console.log(e.target.id);
+  // console.log(e.target.id);
   let listofAirtableItems = document.querySelectorAll("div.airtable-item");
   listofAirtableItems.forEach(function SearchFilter(item) {
     
     let parent = document.querySelector("#" + e.target.id + "Parent");
-    parent.classList.toggle("filter-hide");
+    parent.classList.remove("filter-hide");
 
 
 
