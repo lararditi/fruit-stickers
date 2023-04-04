@@ -55,6 +55,20 @@ base("table")
        }
 
        //melon.html
+       if("apple.html"===filename){
+        let ethicParent = document.querySelector("#ethicParent");
+        let unethicParent = document.querySelector("#unethicParent");
+        if(record.fields.produceType==="Melon"){
+         if(record.fields.ethic==="ethical"){
+            airtableItem.classList.add("airtable-item");
+            ethicParent.append(airtableItem);
+         }else if(record.fields.ethic==="unethical"){
+            unethicParent.append(airtableItem);
+            airtableItem.classList.add("airtable-item");
+         };
+      }
+     }
+
 
     });
   });

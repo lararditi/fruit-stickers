@@ -89,7 +89,7 @@ grid-row-gap: 3px;
     grid-template-columns: auto auto;
     padding: 10px;
     margin:auto;
-
+    justify-items: center;
     grid-area: 1 / 1 / 4 / 2;
 
 }
@@ -117,7 +117,7 @@ img{
 }
 
 .fruit_old{
-    width: 100%;
+    width: 57%;
     position: relative;
 }
 
