@@ -54,6 +54,8 @@ grid-row-gap: 3px;
 
     .airtable-image{
         width: 30%; 
+        left: 8vw;
+        top: 2vh;
       }
 
 
