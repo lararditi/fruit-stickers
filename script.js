@@ -43,7 +43,7 @@ base("table")
        if("apple.html"===filename){
           let ethicParent = document.querySelector("#ethicParent");
           let unethicParent = document.querySelector("#unethicParent");
-          if(record.fields.produceType==="Melon"){
+          if(record.fields.produceType==="apple&pears"){
            if(record.fields.ethic==="ethical"){
               airtableItem.classList.add("airtable-item");
               ethicParent.append(airtableItem);
@@ -55,7 +55,7 @@ base("table")
        }
 
        //melon.html
-       if("apple.html"===filename){
+       if("watermelon.html"===filename){
         let ethicParent = document.querySelector("#ethicParent");
         let unethicParent = document.querySelector("#unethicParent");
         if(record.fields.produceType==="Melon"){
@@ -69,7 +69,65 @@ base("table")
       }
      }
 
+     //avocado.html
+     if("avocado.html"===filename){
+      let ethicParent = document.querySelector("#ethicParent");
+      let unethicParent = document.querySelector("#unethicParent");
+      if(record.fields.produceType==="Avocado"){
+       if(record.fields.ethic==="ethical"){
+          airtableItem.classList.add("airtable-item");
+          ethicParent.append(airtableItem);
+       }else if(record.fields.ethic==="unethical"){
+          unethicParent.append(airtableItem);
+          airtableItem.classList.add("airtable-item");
+       };
+    }
+   }
 
+   //orange.html
+   if("orange.html"===filename){
+    let ethicParent = document.querySelector("#ethicParent");
+    let unethicParent = document.querySelector("#unethicParent");
+    if(record.fields.produceType==="Orange"){
+     if(record.fields.ethic==="ethical"){
+        airtableItem.classList.add("airtable-item");
+        ethicParent.append(airtableItem);
+     }else if(record.fields.ethic==="unethical"){
+        unethicParent.append(airtableItem);
+        airtableItem.classList.add("airtable-item");
+     };
+  }
+ }
+
+ //banana.html
+ if("banana.html"===filename){
+  let ethicParent = document.querySelector("#ethicParent");
+  let unethicParent = document.querySelector("#unethicParent");
+  if(record.fields.produceType==="Tropical"){
+   if(record.fields.ethic==="ethical"){
+      airtableItem.classList.add("airtable-item");
+      ethicParent.append(airtableItem);
+   }else if(record.fields.ethic==="unethical"){
+      unethicParent.append(airtableItem);
+      airtableItem.classList.add("airtable-item");
+   };
+}
+}
+
+//strawberry.html
+if("strawberry.html"===filename){
+  let ethicParent = document.querySelector("#ethicParent");
+  let unethicParent = document.querySelector("#unethicParent");
+  if(record.fields.produceType==="Melon"){
+   if(record.fields.ethic==="ethical"){
+      airtableItem.classList.add("airtable-item");
+      ethicParent.append(airtableItem);
+   }else if(record.fields.ethic==="unethical"){
+      unethicParent.append(airtableItem);
+      airtableItem.classList.add("airtable-item");
+   };
+}
+}
     });
   });
 

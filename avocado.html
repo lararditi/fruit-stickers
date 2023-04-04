@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FruitStickers</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta https-equiv="X-UA-Compatible" content="ie-edge">
+
+    <link rel="stylesheet" href="style_detail.css">
+    <script type="text/javascript" src="./airtable.browser.js"></script>    
+</head>
+<body style="background-color: #c2ffa3;">
+
+<div class="header">
+    <div class="filters-container">
+        <button type="button" id="ethic">ethical</button> 
+        <button type="button" id="unethic">unethical</button> 
+        </div>
+</div>
+   
+<div class="encase">
+<div class="main_fruit">
+    <div class="fruit_old">
+        <div class="airtable-item filter-hide" data-ethic="ethical" id="ethicParent">
+        </div>
+        <img src="stickers/avocado.png" width="450"> 
+    </div>
+
+    <div class="fruit_old">
+        <div class="airtable-item filter-hide" data-ethic="unethical" id="unethicParent"> 
+        </div>
+        <img src="stickers/rotten-avocado.png" width="450">
+    </div>
+
+
+    <div class="fruit_corusel">
+        <div class="fruit_corusel_item"><a href="fruit_detail.html"> <img src="stickers/banana.png"></a></div>
+        <div class="fruit_corusel_item"><a href="avocado.html"><img src="stickers/avocado.png"></a></div>
+        <div class="fruit_corusel_item"><a href="watermelon.html"><img src="stickers/watermelon.png"></a></div>
+        <div class="fruit_corusel_item"><a href="fruit_detail.html"><img src="stickers/apple.webp"></a></div>
+        <div class="fruit_corusel_item"><a href="orange.html"><img src="stickers/orange.webp"></a></div>
+    </div>
+</div>
+
+</div>
+
+
+
+<script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
