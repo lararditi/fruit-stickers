@@ -33,11 +33,13 @@ body {
     display: inline-block;
     position: relative;
     grid-row-start: 2;
+    margin-bottom: 100px;
 }
 
 
 .bowl{
   grid-column: span 2;
+  margin-bottom: 50px;
   display: inline-grid;
   /* grid-template-columns: subgrid;
   grid-template-rows: min-content 1fr; */
@@ -143,25 +145,6 @@ img{
         transform: rotate(210deg);
     }
 }
-
-/* @media screen and (min-width: 1200px) {
-    .fruit-1 {
-        position: absolute;
-        top:100px;
-        right: 0px;
-        width:300px;
-        transform: rotate(210deg);
-    }
-} */
-
-/* @media screen and (min-width: 992px) and (max-width: 1200px) {
-
-}
-
-
-@media screen and (min-width: 768px) and (max-width: 992px) {
-
-} */
 
 
 @media screen and (min-width: 730px) and (max-width: 915px) {

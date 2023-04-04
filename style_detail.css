@@ -54,7 +54,7 @@ grid-row-gap: 3px;
 
     .airtable-image{
         width: 30%; 
-        left: 8vw;
+        left: 7.5vw;
         top: 2vh;
       }
 
@@ -136,9 +136,8 @@ img{
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: auto auto auto auto auto;
-    padding: 5px;
+    margin: 10px;
     column-span: all;
-    margin:10%;
     bottom: 1%;
     position: absolute;
     justify-items: center;
