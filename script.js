@@ -43,7 +43,7 @@ base("table")
        if("apple.html"===filename){
           let ethicParent = document.querySelector("#ethicParent");
           let unethicParent = document.querySelector("#unethicParent");
-          if(record.fields.produceType==="apple&pears"){
+          if(record.fields.produceType==="apples&pears"){
            if(record.fields.ethic==="ethical"){
               airtableItem.classList.add("airtable-item");
               ethicParent.append(airtableItem);
